@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Сабина  Самбурова](https://up.htmlacademy.ru/adaptive/24/user/1848487).
-* Наставник: [Дмитрий Иовлев] (https://htmlacademy.ru/profile/skywalker).
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
