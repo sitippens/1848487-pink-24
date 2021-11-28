@@ -11,36 +11,46 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item main-nav__item--active"><a href="#">Главная</a></li>
           <li class="main-nav__item"><a href="#">Фотографии</a></li>
           <li class="main-nav__item"><a href="#">Конкурс</a></li>
           <li class="main-nav__item"><a href="#">HTML academy</a></li>
         </ul>
       </div>
     </nav>
-  </header>
-  <main class="page-main">
-    <section class="banner">
-      <h1 class="banner__title">Взгляните на жизнь иначе!</h1>
-      <div class="banner__wrapper">
-        <button class="banner__button" type="button">Скачать приложение</button>
-        <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
+    <main class="page-main">
+      <section class="banner">
+        <h1 class="visually-hidden">Баннер</h1>
+        <span class="banner__title">Взгляните на жизнь иначе!</span>
+        <div class="banner__wrapper">
+          <a class="banner__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          <a class="banner__link--ios" href="https://www.apple.com/ru/app-store/">IOS</a>
+          <a class="banner__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">Android</a>
+          <a class="banner__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows">Windows</a>
+          <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+    </header>
     <div class="offer">
-      <p class="coffer__text">Устали от серости мегаполиса?</p>
+      <p class="offer__text">Устали от серости мегаполиса?</p>
       <p class="offer__text">Нам есть, что вам предложить!</p>
     </div>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <dl class="advantages__list">
-        <dt class="advantages__title">Поднимает настроение</dt>
-        <dd class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
-        <dt class="advantages__title">Меняет мир вокруг</dt>
-        <dd class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
-        <dt class="advantages__title">Заводит новых друзей</dt>
-        <dd class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
-      </dl>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
     </section>
     <div class="fact"></div>
     <section class="reviews">
@@ -78,29 +88,38 @@
     <section class="price">
       <div class="price__wrapper slider">
         <h3 class="visually-hidden">Цены</h3>
-        <ul class="price__list slider__list">
-          <li class="price__item slider__item">
-            <p class="price__title">База</p>
-            <p class="price__value">1,99 USD</p>
-            <p class="price__filter">Розовый фильтр</p>
-            <p class="emojis">Смайлики</p>
-            <p class="comments">Комментарии</p>
-          </li>
-          <li class="price__item slider__item">
-            <p class="price__title">Стандарт</p>
-            <p class="price__value">3,99 USD</p>
-            <p class="price__filter">Розовый фильтр</p>
-            <p class="emojis">Смайлики</p>
-            <p class="comments">Комментарии</p>
-          </li>
-          <li class="price__item slider__item">
-            <p class="price__title">Анлим</p>
-            <p class="price__value">9,99 USD</p>
-            <p class="price__filter">Розовый фильтр</p>
-            <p class="emojis">Смайлики</p>
-            <p class="comments">Комментарии</p>
-          </li>
-        </ul>
+          <table class="price__table">
+            <tr class="price__table--row">
+              <td class="price__table--cell"></td>
+              <th class="price__table--header">База</th>
+              <th class="price__table--header">Стандарт</th>
+              <th class="price__table--header">Анлим</th>
+            </tr>
+            <tr class="price__table--row">
+              <td></td>
+              <td class="price__table--cell">1,99 USD</td>
+              <td class="price__table--cell">3,99 USD</td>
+              <td class="price__table--cell">9,99 USD</td>
+            </tr>
+            <tr class="price__table--row">
+              <th class="price__table--header">Розовый фильтр</th>
+              <td class="visually-hidden">да</td>
+              <td class="visually-hidden">да</td>
+              <td class="visually-hidden">да</td>
+            </tr>
+            <tr class="price__table-row">
+              <th class="price__table-header">Смайлики</th>
+              <td class="visually-hidden price__table--cell">нет</td>
+              <td class="visually-hidden price__table--cell">да</td>
+              <td class="visually-hidden price__table--cell">да</td>
+            </tr>
+            <tr class="price__table-row">
+              <th class="price__table-header">Комментарии</th>
+              <td class="visually-hidden price__table--cell">нет</td>
+              <td class="visually-hidden price__table--cell">нет</td>
+              <td class="visually-hidden price__table--cell">да</td>
+            </tr>
+          </table>
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
           <button class="slider__toggle slider__toggle--current" type="button">2</button>
