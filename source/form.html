@@ -23,9 +23,11 @@
     </div>
   </header>
   <main class="page-main">
+    <span class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+    </span>
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</legend>
+        <legend class="form__legend visually-hidden">Ваше имя:</legend>
         <p class="form__paragraph">
           <label class="form__label" for="lastname">Фамилия:</label>
           <input class="form__input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
@@ -94,6 +96,7 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Опишите свои эмоции</legend>
+        <label class="visually-hidden">Вставьте текст в поле</label>
         <textarea class="form__textarea" id="emotions" name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
       </fieldset>
       <div class="form-wrapper">
