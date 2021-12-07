@@ -1,0 +1,50 @@
+.advantages {
+  background: url("../img/iphone 3.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.advantages__list {
+  margin: 0;
+  padding-left: 0;
+  padding-top: 53px;
+  background-color: $lightgrey;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__title {
+  margin: 0;
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+/*
+.advantages__description:last-child {
+  padding-bottom: 325px;
+}
+*/
+.advantages__description {
+  margin: 0;
+  padding-bottom: 43px;
+}
+
+.advantages__description--last {
+  padding-bottom: 325px;
+  background:
+  url("../img/screen-3.png") no-repeat center 127px,
+  url("../img/iphone 3.png") no-repeat center 90px;
+
+}
+
+.advantages__offer {
+  margin: 0;
+  padding: 46px 20px 70px 20px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}

@@ -1,0 +1,18 @@
+.main-nav {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  display: none;
+  z-index: 1;
+}
+
+.main-nav__list {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
