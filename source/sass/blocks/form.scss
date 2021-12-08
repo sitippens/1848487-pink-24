@@ -21,40 +21,18 @@
   text-align: left;
 }
 
-.pink-header {
-  color: $pink;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 .form__input {
   margin-bottom: 29px;
   margin-left: 22px;
 }
 
-.form__input[type=text] {
+.form__input[type="text"],
+.form__input[type="tel"],
+.form__input[type="email"] {
   padding-left: 20px;
   width: 276px;
   height: 59px;
-  border: 2px solid #E5E5E5;
-  border-radius: 1px;
-}
-
-.form__input[type=tel] {
-  padding-left: 20px;
-  width: 276px;
-  height: 59px;
-  border: 2px solid #E5E5E5;
-  border-radius: 1px;
-}
-
-.form__input[type=email] {
-  padding-left: 20px;
-  width: 276px;
-  height: 59px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 1px;
 }
 

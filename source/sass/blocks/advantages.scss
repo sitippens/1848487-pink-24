@@ -1,5 +1,5 @@
 .advantages {
-  background: url("../img/iphone 3.png");
+  background: url("../img/iphone-3.png");
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -18,7 +18,7 @@
 
 .advantages__title {
   margin: 0;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -36,9 +36,8 @@
 .advantages__description--last {
   padding-bottom: 325px;
   background:
-  url("../img/screen-3.png") no-repeat center 127px,
-  url("../img/iphone 3.png") no-repeat center 90px;
-
+    url("../img/screen-3.png") no-repeat center 127px,
+    url("../img/iphone 3.png") no-repeat center 90px;
 }
 
 .advantages__offer {
