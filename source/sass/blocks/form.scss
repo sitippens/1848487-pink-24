@@ -6,6 +6,7 @@
 .form__legend {
   padding-top: 42px;
   padding-bottom: 40px;
+  line-height: 18px;
 }
 
 .form__fieldset--grey {
@@ -14,6 +15,7 @@
 
 .form__legend--grey {
   background-color: $lightgrey;
+  line-height: 18px;
 }
 
 .form__paragraph {
@@ -22,30 +24,34 @@
 }
 
 .form__input {
-  margin-bottom: 29px;
-  margin-left: 22px;
-}
-
-.form__input[type="text"],
-.form__input[type="tel"],
-.form__input[type="email"] {
   padding-left: 20px;
   width: 276px;
   height: 59px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $textcolor;
 }
 
 .form__input::placeholder {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
+  color: $textcolor;
 }
 
 .form__label {
   display: inline-block;
   padding-bottom: 17px;
+}
+
+.form__label-pick {
+  display: inline-block;
+  padding-bottom: 65px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .form__textarea {

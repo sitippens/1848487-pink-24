@@ -1,9 +1,10 @@
-.upload-button-wrapper__post {
+.upload-button {
   margin-bottom: 12px;
   width: 280px;
   height: 55px;
   color: $pink;
   background-color: transparent;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -12,15 +13,9 @@
   border-radius: 30px;
 }
 
-.upload-button-wrapper__reset {
+.upload-button--grey {
   opacity: 0.1;
-  width: 280px;
-  height: 55px;
   background-color: transparent;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  border: 3px solid;
-  box-sizing: border-box;
-  border-radius: 30px;
+  border: 3px $textcolor solid;
+  color: $textcolor;
 }
