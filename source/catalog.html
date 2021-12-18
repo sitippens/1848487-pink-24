@@ -109,33 +109,33 @@
         </div>
       </div>
     </section>
-    <div class="upload-wrapper">
-      <h2 class="upload-wrapper__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-    </div>
-    <form class="upload" action="https://echo.htmlacademy.ru/" method="POST">
-      <input class="upload__file visually-hidden" type="file" id="file" name="file">
-      <label class="upload__picture" for="file">
-        <img src="img/catalog/photo-7-tablet.jpg" alt="Зимний лес">
-      </label>
-      <div class="upload__tools">
-        <div class="upload__range-slider">
-          <input class="upload__input" type="range" id="crop" name="crop" min="0" max="100">
-          <label class="upload__label" for="crop"><span class="visually-hidden">Обрезка</span></label>
+    <section class="upload">
+      <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+      <form class="upload__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <input class="upload__file visually-hidden" type="file" id="file" name="file">
+        <label class="upload__picture" for="file">
+          <img src="img/catalog/photo-7-tablet.jpg" alt="Зимний лес">
+        </label>
+        <div class="upload__tools">
+          <div class="upload__range-slider">
+            <input class="upload__input" type="range" id="crop" name="crop" min="0" max="100">
+            <label class="upload__label" for="crop"><span class="visually-hidden">Обрезка</span></label>
+          </div>
+          <div class="upload__range-slider">
+            <input class="upload__input" type="range" id="fill" name="fill" min="0" max="100">
+            <label class="upload__label" for="fill"><span class="visually-hidden">Заливка</span></label>
+          </div>
+          <div class="upload__range-slider">
+            <input class="upload__input" type="range" id="contrast" name="contrast" min="0" max="100">
+            <label class="upload__label" for="contrast"><span class="visually-hidden">Контрастность</span></label>
+          </div>
         </div>
-        <div class="upload__range-slider">
-          <input class="upload__input" type="range" id="fill" name="fill" min="0" max="100">
-          <label class="upload__label" for="fill"><span class="visually-hidden">Заливка</span></label>
+        <div class="upload__button-wrapper">
+          <button class="button upload__button-submit" type="submit">Запостить</button>
+          <button class="button button--grey upload__button-reset" type="reset">Отмена</button>
         </div>
-        <div class="upload__range-slider">
-          <input class="upload__input" type="range" id="contrast" name="contrast" min="0" max="100">
-          <label class="upload__label" for="contrast"><span class="visually-hidden">Контрастность</span></label>
-        </div>
-      </div>
-      <div class="upload-button-wrapper">
-        <button class="upload-button" type="submit">Запостить</button>
-        <button class="upload-button upload-button--grey" type="reset">Отмена</button>
-      </div>
-    </form>
+      </form>
+  </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

@@ -1,7 +1,8 @@
 @import "global/fonts.scss";
-@import "global/global.scss";
 @import "global/variables.scss";
+@import "global/global.scss";
 @import "global/typography.scss";
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page.scss";
 @import "blocks/page-body.scss";
@@ -22,6 +23,4 @@
 @import "blocks/photos-item.scss";
 @import "blocks/photos-title.scss";
 @import "blocks/upload.scss";
-@import "blocks/upload-wrapper.scss";
-@import "blocks/upload-button-wrapper.scss";
 @import "blocks/social.scss";

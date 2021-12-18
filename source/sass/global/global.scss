@@ -16,18 +16,13 @@ img {
   overflow: hidden;
 }
 
-.button {
-  cursor: pointer;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #283645;
+  color: $textcolor;
 }
-
 
 *,
 *::before,

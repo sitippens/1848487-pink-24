@@ -1,9 +1,8 @@
 .page-header {
   background:
-    url("../img/screen.png") no-repeat 104px 204px,
     url("../img/phone.png") no-repeat bottom left,
-    url("../img/back-mobile.png") no-repeat bottom left;
-  color: #ffffff;
+    url("../img/back-mobile.png") no-repeat;
+  color: $white;
   margin: 0 auto;
 }
 

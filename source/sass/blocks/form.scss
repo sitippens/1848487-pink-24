@@ -45,22 +45,42 @@
   padding-bottom: 17px;
 }
 
-.form__label-pick {
+.form__label-checkbox {
   display: inline-block;
-  padding-bottom: 65px;
-  font-family: "Open Sans", sans-serif;
+  padding-bottom: 69px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+
+.form__label-radio {
+  display: inline-block;
+  padding-bottom: 62px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__input-radio + .form__label-radio::before {
+
 }
 
 .form__textarea {
   padding: 22px 25px 20px 20px;
   width: 276px;
   height: 197px;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  box-sizing: border-box;
+  color: $textcolor;
+}
+
+.form__textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $textcolor;
 }
