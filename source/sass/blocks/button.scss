@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  padding: 15px 10px;
+  padding-bottom: 16px;
+  width: 280px;
+  color: $pink;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid $pink;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  &--white {
+    border: 3px $white solid;
+    color: $white;
+  }
+
+  &--grey {
+    opacity: 0.1;
+    border: 3px $textcolor solid;
+    color: $textcolor;
+  }
+}

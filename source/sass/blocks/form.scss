@@ -1,0 +1,86 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__legend {
+  padding-top: 42px;
+  padding-bottom: 40px;
+  line-height: 18px;
+}
+
+.form__fieldset--grey {
+  background-color: $lightgrey;
+}
+
+.form__legend--grey {
+  background-color: $lightgrey;
+  line-height: 18px;
+}
+
+.form__paragraph {
+  margin: 0;
+  text-align: left;
+}
+
+.form__input {
+  padding-left: 20px;
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $textcolor;
+}
+
+.form__input::placeholder {
+  color: $textcolor;
+}
+
+.form__label {
+  display: inline-block;
+  padding-bottom: 17px;
+}
+
+.form__label-checkbox {
+  display: inline-block;
+  padding-bottom: 69px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__label-radio {
+  display: inline-block;
+  padding-bottom: 62px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__input-radio + .form__label-radio::before {
+
+}
+
+.form__textarea {
+  padding: 22px 25px 20px 20px;
+  width: 276px;
+  height: 197px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $textcolor;
+}
+
+.form__textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $textcolor;
+}

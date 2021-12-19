@@ -3,39 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo"><img src="img/pink-logo.svg" width="74" height="23" alt="Логотип Pink"></a>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo"><img class="page-header__logo page-header__logo--picture" src="img/pink-logo.svg" width="74" height="23" alt="Логотип Pink"></a>
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML academy</a></li>
         </ul>
       </div>
     </nav>
-      <section class="banner">
-        <h1 class="visually-hidden">Баннер</h1>
-        <span class="banner__title">Взгляните на жизнь иначе!</span>
-        <div class="banner__wrapper">
-          <a class="banner__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-          <ul class="banner__list">
-            <li class="banner__list-item"><a class="banner__link banner__link--ios" href="https://www.apple.com/ru/app-store/">IOS</a></li>
-            <li class="banner__list-item"><a class="banner__link banner__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US">Android</a></li>
-            <li class="banner__list-item"><a class="banner__link banner__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows">Windows</a></li>
-          </ul>
-          <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
+    <section class="banner">
+      <h1 class="visually-hidden">Баннер</h1>
+      <span class="banner__title heading-primary">Взгляните на жизнь<br>иначе!</span>
+      <div class="banner__wrapper">
+        <a class="button button--white banner__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+        <ul class="banner__list">
+          <li class="banner__list-item"><a class="banner__link banner__link--ios" href="https://www.apple.com/ru/app-store/"><span class="visually-hidden">IOS</span></a></li>
+          <li class="banner__list-item"><a class="banner__link banner__link--android" href="https://play.google.com/store/apps?hl=ru&gl=US"><span class="visually-hidden">Android</span></a></li>
+          <li class="banner__list-item"><a class="banner__link banner__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"><span class="visually-hidden">Windows</span></a></li>
+        </ul>
+        <p class="banner__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
     </header>
     <main class="page-main">
       <section class="advantages">
         <h2 class="advantages__offer">
-          <span class="advantages__offer-text">Устали от серости мегаполиса?</span>
+          <span class="advantages__offer-text">Устали от серости мегаполиса?</span><br>
           <span class="advantages__offer-text">Нам есть, что вам предложить!</span>
         </h2>
         <ul class="advantages__list">
@@ -49,7 +53,7 @@
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <p class="advantages__description advantages__description--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
@@ -91,15 +95,15 @@
             <table class="price__table">
               <tr class="price__table-row">
                 <th class="price__table-cell"><span class="visually-hidden">Тариф</span></th>
-                <th class="price__table-header">База</th>
-                <th class="price__table-header">Стандарт</th>
-                <th class="price__table-header">Анлим</th>
+                <th class="price__table-rate">База</th>
+                <th class="price__table-rate">Стандарт</th>
+                <th class="price__table-rate">Анлим</th>
               </tr>
               <tr class="price__table-row">
                 <th class="price__table-cell"><span class="visually-hidden">Цена</span></th>
-                <td class="price__table-cell">1,99 USD</td>
-                <td class="price__table-cell">3,99 USD</td>
-                <td class="price__table-cell">9,99 USD</td>
+                <td class="price__table-price">1,99 USD</td>
+                <td class="price__table-price">3,99 USD</td>
+                <td class="price__table-price">9,99 USD</td>
               </tr>
               <tr class="price__table-row">
                 <th class="price__table-header">Розовый фильтр</th>
@@ -157,13 +161,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS">YouTube</a>
+            <a class="social__link social__link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">YouTube</span></a>
           </li>
         </ul>
       </div>

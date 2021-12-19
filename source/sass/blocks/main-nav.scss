@@ -1,0 +1,17 @@
+.main-nav {
+  display: none;
+  z-index: 1;
+}
+
+.main-nav__list {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
