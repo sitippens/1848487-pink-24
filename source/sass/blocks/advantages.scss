@@ -1,5 +1,4 @@
 .advantages {
-  background: url("../img/iphone-3.png");
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -16,6 +15,10 @@
   text-align: center;
 }
 
+.advantages__item {
+  text-align: center;
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 24px;
@@ -28,10 +31,66 @@
 .advantages__description {
   margin: 0;
   padding-bottom: 43px;
+}
 
-  &--last {
-    padding-bottom: 325px;
-    background: url("../img/iphone.png") no-repeat center 90px;
+.advantages__phone {
+  height: 285px;
+  background: url("../img/iphone.png") no-repeat center 0;
+  background-color: $lightgrey;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    order: 1;
+  }
+
+  .advantages__phone {
+    background-size: 268px 547px;
+    background-position: center 0;
+    height: 482px;
+  }
+
+  .advantages__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $lightgrey;
+  }
+
+  .advantages__item {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__phone {
+    display: none;
+  }
+
+  .advantages__list {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .advantages-title {
+    margin-top: 59px;
+  }
+
+  .advantages__item {
+    text-align: center;
+    padding-top: 382px;
+
+    &--mood {
+      background: url("../img/mood.png") no-repeat center 80px;
+    }
+
+    &--world {
+      background: url("../img/world.png") no-repeat center 80px;
+    }
+
+    &--friends {
+      background: url("../img/friends.png") no-repeat center 80px;
+    }
   }
 }
 
