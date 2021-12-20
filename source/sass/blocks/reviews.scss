@@ -14,6 +14,53 @@
   color: $black;
 }
 
+.reviews__age {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 40px;
+  }
+
+  .reviews__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__age {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    order: -1;
+  }
+
+  .reviews__buttons,
+  .reviews__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+}
+
 .reviews__item {
   margin: 0;
 }

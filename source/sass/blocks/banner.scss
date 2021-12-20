@@ -14,3 +14,15 @@
   list-style-type: none;
   margin: 0;
 }
+
+.banner__wrapper {
+  background-color: $darkgrey;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
