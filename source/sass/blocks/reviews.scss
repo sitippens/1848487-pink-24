@@ -18,6 +18,19 @@
   display: none;
 }
 
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  padding-top: 31px;
+  margin: 0;
+}
+
+.reviews__toggles {
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 40px;
@@ -41,6 +54,7 @@
 
   .reviews__text {
     font-size: 18px;
+    line-height: 30px;
     order: -1;
   }
 
@@ -59,17 +73,12 @@
   .reviews__toggles {
     display: none;
   }
-}
 
-.reviews__item {
-  margin: 0;
-}
+  .reviews__author-name {
+    font-size: 24px;
+  }
 
-.reviews__text {
-  padding-top: 31px;
-  margin: 0;
-}
-
-.reviews__toggles {
-  margin: 0;
+  .reviews__age {
+    font-size: 18px;
+  }
 }

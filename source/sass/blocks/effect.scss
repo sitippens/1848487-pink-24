@@ -10,14 +10,28 @@
     padding-top: 54px;
   }
 
-  .effect__pic {
-    height: 276px;
-    width: 238px;
-    background-image: url("../img/effect-pic.png");
+  .effect__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
   }
 
-  .effect__wrapper {
-    width: 310px;
+  .effect__text-wrapper {
+    position: relative;
+    grid-column: 2/-1;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 80%;
+      top: 0%;
+      height: 100%;
+      width: 100%;
+      background-image: url("../img/effect-pic.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .effect__title {
@@ -44,5 +58,33 @@
 @media (min-width: $desktop-width) {
   .effect {
     background-color: $lightgrey;
+  }
+
+  .effect__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+    min-height: 345px;
+  }
+  .effect__text-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/effect-pic.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
