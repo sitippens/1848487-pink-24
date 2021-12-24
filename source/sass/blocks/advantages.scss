@@ -91,8 +91,8 @@
   }
 
   .advantages__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .advantages-title {
@@ -100,7 +100,6 @@
   }
 
   .advantages__item {
-    width: 253px;
     text-align: center;
     padding-top: 382px;
 

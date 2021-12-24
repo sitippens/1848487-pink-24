@@ -24,13 +24,14 @@
       content: "";
       display: block;
       position: absolute;
-      right: 80%;
+      right: 100%;
       top: 0%;
       height: 100%;
       width: 100%;
       background-image: url("../img/effect-pic.svg");
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
     }
   }
 
@@ -75,16 +76,18 @@
     column-gap: 70px;
     min-height: 345px;
   }
+
   .effect__text-wrapper::before {
     content: "";
     display: block;
     position: absolute;
-    right: 50%;
+    right: 100%;
     top: 0%;
     height: 100%;
     width: 100%;
     background-image: url("../img/effect-pic.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
   }
 }
