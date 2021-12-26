@@ -1,18 +1,25 @@
 .advantages {
-  background: url("../img/iphone-3.png");
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-color: $lightgrey;
+}
+
+.advantages__offer-wrapper {
+  background-color: $white;
 }
 
 .advantages__list {
   margin: 0;
   padding-left: 0;
   padding-top: 53px;
-  background-color: $lightgrey;
   list-style-type: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+}
+
+.advantages__item {
   text-align: center;
 }
 
@@ -28,17 +35,102 @@
 .advantages__description {
   margin: 0;
   padding-bottom: 43px;
+}
 
-  &--last {
-    padding-bottom: 325px;
-    background: url("../img/iphone.png") no-repeat center 90px;
-  }
+.advantages__phone {
+  height: 285px;
+  background: url("../img/iphone.png") no-repeat center 0;
+  background-color: $lightgrey;
 }
 
 .advantages__offer {
   margin: 0;
-  padding: 46px 20px 70px 20px;
+  padding-top: 46px;
+  padding-bottom: 70px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    order: 1;
+  }
+
+  .advantages__phone {
+    background-size: 268px 547px;
+    background-position: center 0;
+    height: 482px;
+  }
+
+  .advantages__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $lightgrey;
+  }
+
+  .advantages__item {
+    text-align: left;
+  }
+
+  .advantages__offer {
+    padding-top: 58px;
+    padding-bottom: 47px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    display: block;
+  }
+
+  .advantages__phone {
+    display: none;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .advantages-title {
+    margin-top: 59px;
+  }
+
+  .advantages__item {
+    text-align: center;
+    padding-top: 382px;
+
+    &--mood {
+      background: url("../img/mood.png") no-repeat center 80px;
+    }
+
+    &--world {
+      background: url("../img/world.png") no-repeat center 80px;
+    }
+
+    &--friends {
+      background: url("../img/friends.png") no-repeat center 80px;
+    }
+  }
+
+  .advantages__offer {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 77px;
+    padding-bottom: 72px;
+  }
+
+  .advantages__title {
+    margin-top: 59px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
