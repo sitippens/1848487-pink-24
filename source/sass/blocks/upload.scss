@@ -9,3 +9,63 @@
 .upload__button-submit {
   margin-bottom: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .upload__form {
+    background-color: $lightgrey;
+    padding-top: 57px;
+    padding-bottom: 54px;
+    padding-right: 13px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .upload__title {
+    padding-top: 53px;
+    padding-bottom: 78px;
+    font-size: 18px;
+  }
+
+  .upload__button-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upload__button-submit {
+    margin-bottom: 24px;
+    width: 260px;
+  }
+
+  .upload__button-reset {
+    width: 260px;
+  }
+
+  .upload__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__form {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .upload__button-wrapper {
+    flex-direction: row;
+  }
+
+  .upload__button-submit {
+    margin-bottom: 0;
+    margin-right: 44px;
+    width: 183px;
+  }
+
+  .upload__button-reset {
+    width: 183px;
+  }
+}

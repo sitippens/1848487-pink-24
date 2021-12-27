@@ -3,19 +3,16 @@
   text-align: center;
 }
 
-.page-footer__logo {
-  padding-bottom: 142px;
-}
-
 .page-footer__copyright {
   display: flex;
-  padding-bottom: 51px;
+  justify-content: flex-end;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     padding-top: 36px;
+    height: 127px;
   }
 
   .page-footer__wrapper {
@@ -27,5 +24,6 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 70px;
+    height: 197px;
   }
 }

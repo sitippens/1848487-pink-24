@@ -1,6 +1,5 @@
 .modal {
   width: 320px;
-  height: 279px;
   text-align: center;
 }
 
@@ -16,6 +15,13 @@
   margin: 0;
   padding-top: 37px;
   padding-bottom: 50px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  &--error {
+    padding-bottom: 41px;
+  }
 }
 
 .modal__button {
@@ -30,4 +36,28 @@
   line-height: 30px;
   border: none;
   cursor: pointer;
+  margin-bottom: 52px;
+}
+
+.modal__button-wrapper {
+  padding-top: 52px;
+  background-color: $lightgrey;
+}
+
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 460px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }

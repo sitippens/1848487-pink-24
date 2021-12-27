@@ -1,5 +1,6 @@
 .form-wrapper__button {
   margin-top: 52px;
+  margin-bottom: 46px;
   width: 276px;
   height: 59px;
   background-color: $green;
@@ -14,4 +15,24 @@
 
 .form-wrapper__star {
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .form-wrapper__button {
+    margin-top: 123px;
+    margin-bottom: 0px;
+  }
+
+  .form-wrapper__required {
+    padding-top: 148px;
+  }
+
+  .form-wrapper__text {
+    text-transform: uppercase;
+  }
 }
