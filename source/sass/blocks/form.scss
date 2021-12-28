@@ -1,6 +1,7 @@
 .form__fieldset {
   border: none;
   padding: 0;
+  margin: 0;
 }
 
 .form__legend {
@@ -129,7 +130,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .fieldset__wrapper {
+  .form__fieldset__wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -247,11 +248,8 @@
 @media (min-width: $desktop-width) {
   .form__fieldset-wrapper {
     display: grid;
-    grid-template-columns: 470px 470px;
-    padding-left: 130px;
-    padding-right: 130px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 74px;
   }
 
   .form__contacts-wrapper {
@@ -261,11 +259,6 @@
   .form__fieldset {
     &--name {
       padding-top: 25px;
-      width: 431px;
-    }
-
-    &--app {
-      width: 431px;
     }
 
     &--contacts {

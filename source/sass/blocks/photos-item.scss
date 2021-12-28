@@ -85,7 +85,7 @@
   }
 
   .photos-item__pic-mobile {
-    display: none;
+    // display: none;
   }
 
   .photos-item__pic-tablet {
@@ -110,7 +110,7 @@
 
   .photos-item__wrapper {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
   }
 
@@ -134,7 +134,7 @@
 
 @media (min-width: $desktop-width) {
   .photos-item__pic-mobile {
-    display: none;
+    // display: none;
   }
 
   .photos-item {
@@ -160,7 +160,7 @@
   }
 
   .photos-item__wrapper {
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

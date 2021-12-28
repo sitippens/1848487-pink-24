@@ -16,10 +16,10 @@
     padding-top: 57px;
     padding-bottom: 54px;
     padding-right: 13px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-
 
   .upload__title {
     padding-top: 53px;
@@ -55,6 +55,10 @@
     padding-right: 60px;
   }
 
+  .upload__wrapper {
+    flex-grow: 1;
+  }
+
   .upload__button-wrapper {
     flex-direction: row;
   }
@@ -67,5 +71,10 @@
 
   .upload__button-reset {
     width: 183px;
+  }
+
+  .upload__picture {
+    width: 300px;
+    margin-right: 90px;
   }
 }
