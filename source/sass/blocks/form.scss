@@ -110,7 +110,7 @@
 
 .form__textarea {
   padding: 22px 25px 20px 20px;
-  width: 276px;
+  width: 100%;
   height: 197px;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -146,6 +146,7 @@
 
     &--emotions {
       order: 2;
+      padding: 28px 60px 53px 60px;
     }
   }
 
@@ -153,7 +154,6 @@
     &--app {
       padding-bottom: 47px;
     }
-
 
     &--hidden {
       display: block;
@@ -231,7 +231,6 @@
 
   .form__textarea {
     padding: 23px 23px 20px 20px;
-    width: 496px;
     height: 189px;
   }
 
@@ -249,7 +248,7 @@
   .form__fieldset-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 74px;
+    column-gap: 74px;
   }
 
   .form__contacts-wrapper {
@@ -263,10 +262,21 @@
 
     &--contacts {
       grid-column: 1/3;
+      padding: 25px 60px 45px 60px;
     }
 
     &--acts {
       grid-column: 1/3;
+      padding: 25px 60px 45px 60px;
+    }
+
+    &--emotions {
+      grid-column: 1/3;
+      padding: 25px 60px 45px 60px;
+    }
+
+    &--app {
+      padding: 47px 20px 20px 74px;
     }
   }
 
@@ -304,12 +314,20 @@
 
   .form__legend {
     &--hidden {
-      padding-bottom: 39px;
+      padding-bottom: 25px;
       padding-top: 0;
     }
 
     &--grey {
-      padding-bottom: 47px;
+      padding-bottom: 35px;
+    }
+
+    &--last {
+      padding: 0;
+    }
+
+    &--app {
+      padding-bottom: 0;
     }
   }
 
@@ -317,19 +335,22 @@
     &--phone {
       margin-left: 77px;
       padding-top: 22px;
+      padding-bottom: 0;
     }
 
     &--email {
       margin-left: 74px;
       padding-top: 22px;
-      padding-bottom: 87px;
+      padding-bottom: 0;
     }
   }
 
+  .form__label-checkbox:nth-child(2n+1) {
+      padding-bottom: 0;
+    }
+
   .form__textarea {
-    padding-top: 22px;
-    padding-left: 20px;
-    width: 816px;
+    padding: 22px 20px 20px 20px;
     height: 124px;
   }
 }
