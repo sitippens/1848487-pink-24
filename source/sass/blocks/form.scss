@@ -67,6 +67,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  text-align: left;
 }
 
 .form__input {
@@ -311,12 +312,12 @@
     }
   }
 
-  .form__list {
+  .form__wrapper {
     display: flex;
     justify-content: space-between;
   }
 
-  .form__item:not(:last-child) {
+  .form__list:not(:last-child) {
     margin-right: 55px;
   }
 
