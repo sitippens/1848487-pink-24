@@ -16,20 +16,6 @@
 }
 
 .pink-header {
-  padding-top: 42px;
-  color: $pink;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
-.pink-label {
-  padding-top: 29px;
   color: $pink;
   font-weight: normal;
   font-size: 14px;

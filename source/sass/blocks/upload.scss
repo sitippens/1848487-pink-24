@@ -1,3 +1,7 @@
+.upload {
+  overflow-x: hidden;
+}
+
 .upload__title {
   padding: 49px 20px 52px 20px;
   margin: 0;
@@ -12,6 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .upload__form {
+    position: relative;
     background-color: $lightgrey;
     padding-top: 57px;
     padding-bottom: 54px;
@@ -19,6 +24,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      bottom: 0;
+      background-color: $lightgrey;
+      z-index: -1;
+    }
   }
 
   .upload__title {
@@ -53,6 +71,10 @@
   .upload__form {
     padding-left: 80px;
     padding-right: 60px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .upload__wrapper {
