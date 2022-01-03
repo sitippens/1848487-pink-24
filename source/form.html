@@ -2,153 +2,200 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink-Form</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
-  <header class="page-header">
-    <a href="index.html" class="page-header__logo"><img class="page-header__logo page-header__logo--picture" src="img/pink-logo.svg" width="74" height="23" alt="Логотип Pink"></a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML academy</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="banner-inner">
-      <h1 class="banner-inner__title heading-primary">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
-  </header>
-  <main class="page-main">
-    <span class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-    </span>
-    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="form__fieldset">
-        <legend class="form__legend visually-hidden">Ваше имя:</legend>
-        <p class="form__paragraph">
-          <label class="form__label pink-header" for="lastname">Фамилия:</label>
-          <input class="form__input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
-        </p>
-        <p class="form__paragraph">
-          <label class="form__label pink-header" for="name">Имя:</label>
-          <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
-        </p>
-        <p class="form__paragraph">
-          <label class="form__label pink-header" for="patronymic">Отчество:</label>
-          <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" required>
-        </p>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--grey">
-        <legend class="form__legend form__legend--grey pink-header">Ваши безбашенные достижения в путешествии</legend>
-        <p class="form__paragraph">
-          <input class="form__input-checkbox" type="checkbox" id="selfie" name="selfie" checked>
-          <label class="form__label-checkbox" for="selfie">Сделал селфи с акулой</label>
-        </p>
-        <p class="form__paragraph">
-          <input class="form__input-checkbox" type="checkbox" id="beach" name="beach" checked>
-          <label class="form__label-checkbox" for="beach">Обгорел на пляже</label>
-        </p>
-        <p class="form__paragraph">
-          <input class="form__input-checkbox" type="checkbox" id="chuck" name="chuck">
-          <label class="form__label-checkbox" for="chuck">Видел Чака Норриса</label>
-        </p>
-        <p class="form__paragraph">
-          <input class="form__input-checkbox" type="checkbox" id="souvenirs" name="souvenirs">
-          <label class="form__label-checkbox" for="souvenirs">Накупил сувениров</label>
-        </p>
-        <p class="form__paragraph">
-          <input class="form__input-checkbox" type="checkbox" id="tower" name="tower" checked>
-          <label class="form__label-checkbox" for="tower">Удержал башню</label>
-        </p>
-        <p class="form__paragraph">
-          <input class="form__input-checkbox" type="checkbox" id="hotel" name="hotel">
-          <label class="form__label-checkbox" for="hotel">Разгромил отель</label>
-        </p>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend visually-hidden">Контактная информация</legend>
-        <p class="form__paragraph">
-          <label class="form__label pink-header" for="phone">Номер телефона</label>
-          <input class="form__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
-        </p>
-        <p class="form__paragraph">
-          <label class="form__label pink-header" for="email">Адрес почты</label>
-          <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту*" required>
-        </p>
-      </fieldset>
-      <fieldset class="form__fieldset form__fieldset--grey">
-        <legend class="form__legend form__legend--grey pink-header">С каким приложением путешествовали?</legend>
-        <p class="form__paragraph">
-          <input class="form__input-radio visually-hidden" type="radio" id="iOS" name="radio" value="iOS" checked>
-          <label class="form__label-radio" for="iOS">Pink для iOS</label>
-        </p>
-        <p class="form__paragraph">
-          <input class="form__input-radio visually-hidden" type="radio" id="android" name="radio" value="android">
-          <label class="form__label-radio" for="android">Pink на Android</label>
-        </p>
-        <p class="form__paragraph">
-          <input class="form__input-radio visually-hidden" type="radio" id="windows" name="radio" value="windows">
-          <label class="form__label-radio" for="windows">Windows Phone</label>
-        </p>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend pink-header">Опишите свои эмоции</legend>
-        <label class="visually-hidden">Вставьте текст в поле</label>
-        <textarea class="form__textarea" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </fieldset>
-      <div class="form-wrapper">
-        <button class="form-wrapper__button" type="submit">Отправить форму</button>
-        <span class="form-wrapper__star">*</span>
-        <span class="form-wrapper__text"> — обязательные поля</span>
-      </div>
-    </form>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__logo">
-        <svg width="74" height="23" fill="#283645" xmlns="http://www.w3.org/2000/svg">
-          <path d="M.005 1.549c0-.336.13-.66.365-.9C.604.41.922.27 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549Zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04ZM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389ZM30.674 1.419A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874v20.292a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04ZM55.938 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.268 1.268 0 0 1-.096-.485V1.389h-.01Z" />
-        </svg>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">YouTube</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.2253.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
-          </svg>
-        </a>
+  <header class="page-header page-header--inner">
+    <div class="page-header__wrapper">
+      <div class="container logo-nav__wrapper">
+        <a href="index.html" class="page-header__logo"><img class="page-header__logo page-header__logo--picture" src="img/pink-logo.svg" width="74" height="23" alt="Логотип Pink"></a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML academy</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-  </footer>
+    <div class="container">
+      <div class="banner-inner">
+        <h1 class="banner-inner__title heading-primary">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </div>
+    </header>
+    <main class="page-main">
+        <div class="page-main__text-wrapper">
+          <div class="container">
+            <span class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            </span>
+            <span class="page-main__text page-main__text--hidden">Пожалуйста, заполните форму ниже:</span>
+          </div>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="container">
+            <div class="form__fieldset-wrapper">
 
+              <fieldset class="form__fieldset form__fieldset--name">
+                <legend class="form__legend visually-hidden">Ваше имя:</legend>
+                <p class="form__paragraph form__paragraph--name">
+                  <label class="form__label pink-header" for="lastname">Фамилия:</label>
+                  <input class="form__input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required>
+                </p>
+                <p class="form__paragraph form__paragraph--name">
+                  <label class="form__label pink-header" for="name">Имя:</label>
+                  <input class="form__input form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+                </p>
+                <p class="form__paragraph form__paragraph--name">
+                  <label class="form__label pink-header" for="patronymic">Отчество:</label>
+                  <input class="form__input form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" required>
+                </p>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--grey  form__fieldset--app">
+                <legend class="form__legend form__legend--app form__legend--grey pink-header">С каким приложением путешествовали?</legend>
+                <p class="form__paragraph">
+                  <label class="form__label-radio" for="iOS">Pink для iOS
+                    <input class="form__input-radio visually-hidden" type="radio" id="iOS" name="radio" value="iOS" checked>
+                    <span class="form__mark"></span>
+                  </label>
+                </p>
+                <p class="form__paragraph">
+                  <label class="form__label-radio" for="android">Pink на Android
+                    <input class="form__input-radio visually-hidden" type="radio" id="android" name="radio" value="android">
+                    <span class="form__mark"></span>
+                  </label>
+                </p>
+                <p class="form__paragraph">
+                  <label class="form__label-radio form__label-radio" for="windows">Windows Phone
+                    <input class="form__input-radio visually-hidden" type="radio" id="windows" name="radio" value="windows">
+                    <span class="form__mark"></span>
+                  </label>
+                </p>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--contacts">
+                <legend class="form__legend form__legend--hidden pink-header">Контактная информация</legend>
+                <div class="form__contacts-wrapper">
+                  <p class="form__paragraph form__paragraph--contacts">
+                    <label class="form__label form__label--contacts pink-header" for="phone">Номер телефона</label>
+                    <input class="form__input form__input--contacts" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                  </p>
+                  <p class="form__paragraph form__paragraph--contacts">
+                    <label class="form__label form__label--contacts pink-header" for="email">Адрес почты</label>
+                    <input class="form__input  form__input--contacts form__input" type="email" id="email" name="email" placeholder="Введите почту*" required>
+                  </p>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--acts form__fieldset--grey">
+                <legend class="form__legend form__legend--grey pink-header">Ваши безбашенные достижения в путешествии</legend>
+                <div class="form__wrapper">
+                  <ul class="form__list">
+                    <li class="form__item">
+                      <input class="form__input-checkbox visually-hidden" type="checkbox" id="selfie" name="selfie" checked>
+                      <label class="form__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="form__item">
+                      <input class="form__input-checkbox visually-hidden" type="checkbox" id="beach" name="beach" checked>
+                      <label class="form__label-checkbox" for="beach">Обгорел на пляже</label>
+                    </li>
+                  </ul>
+                  <ul class="form__list">
+                    <li class="form__item">
+                      <input class="form__input-checkbox visually-hidden" type="checkbox" id="chuck" name="chuck">
+                      <label class="form__label-checkbox" for="chuck">Видел Чака Норриса</label>
+                    </li>
+                    <li class="form__item">
+                      <input class="form__input-checkbox visually-hidden" type="checkbox" id="souvenirs" name="souvenirs">
+                      <label class="form__label-checkbox" for="souvenirs">Накупил сувениров</label>
+                    </li>
+                  </ul>
+                  <ul class="form__list">
+                    <li class="form__item">
+                      <input class="form__input-checkbox visually-hidden" type="checkbox" id="tower" name="tower" checked>
+                      <label class="form__label-checkbox" for="tower">Удержал башню</label>
+                    </li>
+                    <li class="form__item">
+                      <input class="form__input-checkbox visually-hidden" type="checkbox" id="hotel" name="hotel">
+                      <label class="form__label-checkbox form__label-checkbox" for="hotel">Разгромил отель</label>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset form__fieldset--emotions">
+                <legend class="form__legend form__legend pink-header">Опишите свои эмоции</legend>
+                <label class="visually-hidden">Вставьте текст в поле</label>
+                <textarea class="form__textarea" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+
+        </div>
+        </div>
+        </div>
+        <div class="container">
+          <div class="form-wrapper">
+            <button class="form-wrapper__button" type="submit">Отправить форму</button>
+            <div class="form-wrapper__required">
+              <span class="form-wrapper__star">*</span>
+              <span class="form-wrapper__text"> — обязательные поля</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo">
+            <svg style="display: block;" width="74" height="23" fill="#283645" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.005 1.549c0-.336.13-.66.365-.9C.604.41.922.27 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549Zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04ZM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389ZM30.674 1.419A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874v20.292a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04ZM55.938 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.268 1.268 0 0 1-.096-.485V1.389h-.01Z" />
+            </svg>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yt" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">YouTube</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано:</p>
+            <a class="copyright__link" href="https://https://htmlacademy.ru/intensive/adaptive">
+              <svg width="27" height="34" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.2253.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   <!-- Модальные окна-->
   <div class="modal">
-    <span class="modal__title">Что-то пошло не так!</span>
-    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button" type="button">OK</button>
+    <div class="container">
+      <span class="modal__title">Что-то пошло не так!</span>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button" type="button">OK</button>
+    </div>
   </div>
 
   <div class="modal">
-    <span class="modal__title">Ваша заявка отправлена</span>
-    <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-    <button class="modal__button" type="button">Закрыть окно</button>
+    <div class="container">
+      <span class="modal__title">Ваша заявка отправлена</span>
+      <p class="modal__text modal__text--error">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal__button-wrapper">
+        <button class="modal__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
