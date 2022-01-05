@@ -13,7 +13,6 @@
 
 .page-header__toggle {
   position: absolute;
-  margin-right: 20px;
   top: 21px;
   right: 20px;
   z-index: 2;
@@ -92,9 +91,10 @@
   display: block;
 }
 
-.page-header__menu--opened .page-header__menu {
+.page-header__menu--opened .page-header__logo-wrapper {
   background-color: $darkgrey-1;
   z-index: 1;
+  border-bottom: 1px solid $black;
 }
 
 .page-header--nojs .page-header__toggle {
@@ -109,8 +109,7 @@
 }
 
 .page-header__logo {
-  margin-top: 22px;
-  margin-left: 35px;
+  margin-left: 20px;
   height: 23px;
   display: block;
 }
@@ -125,6 +124,8 @@
 
 .page-header__logo-wrapper {
   min-height: 66px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -136,6 +137,8 @@
 
   .page-header__logo-wrapper {
     min-height: 110px;
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 
   .page-header__toggle {
@@ -157,8 +160,7 @@
 
   .page-header__logo-tablet {
     display: block;
-    margin-top: 27px;
-    margin-left: 40px;
+    margin-left: 20px;
     height: 40px;
 
     &:hover {
@@ -209,5 +211,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
+  }
+
+  .page-header__menu--opened .page-header__logo-wrapper {
+    background-color: transparent;
+    border-bottom: none;
   }
 }

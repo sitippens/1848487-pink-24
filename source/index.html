@@ -34,7 +34,7 @@
         </button>
         <nav class="main-nav page-header__nav page-header__nav--nojs">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--last" href="https://htmlacademy.ru">HTML academy</a></li>
@@ -125,45 +125,47 @@
         </div>
       </section>
       <section class="price">
-        <div class="container">
+        <div class="container container--header">
           <div class="price__wrapper slider">
             <h3 class="visually-hidden">Цены</h3>
-              <table class="price__table">
-                <tr class="price__table-row">
-                  <th class="price__table-cell visually-hidden"><span class="visually-hidden">Тариф</span></th>
-                  <th class="price__table-rate" rowspan="2">База<br><span class="price__table-price">1,99 USD</span></th>
-                  <th class="price__table-rate" rowspan="2">Стандарт<br><span class="price__table-price">3,99 USD</span></th>
-                  <th class="price__table-rate" rowspan="2">Анлим<br><span class="price__table-price">9,99 USD</span></th>
-                </tr>
-                <tr class="price__table-row">
-                  <th class="price__table-cell visually-hidden">Цена</th>
-                </tr>
-                <tr class="price__table-row">
-                  <th class="price__table-header">Розовый фильтр</th>
-                  <td class="price__table-cell price__table-cell--yes"><span class="visually-hidden">да</span></td>
-                  <td class="price__table-cell price__table-cell--yes"><span class="visually-hidden">да</span></td>
-                  <td class="price__table-cell price__table-cell--yes"><span class="visually-hidden">да</span></td>
-                </tr>
-                <tr class="price__table-row">
-                  <th class="price__table-header">Смайлики</th>
-                  <td class="price__table-cell price__table-cell--no"><span class="visually-hidden">нет</span></td>
-                  <td class="price__table-cell price__table-cell--yes"><span class="visually-hidden">да</span></td>
-                  <td class="price__table-cell price__table-cell--yes"><span class="visually-hidden">да</span></td>
-                </tr>
-                <tr class="price__table-row">
-                  <th class="price__table-header">Комментарии</th>
-                  <td class="price__table-cell price__table-cell--no"><span class="visually-hidden">нет</span></td>
-                  <td class="price__table-cell price__table-cell--no"><span class="visually-hidden">нет</span></td>
-                  <td class="price__table-cell price__table-cell--yes"><span class="visually-hidden">да</span></td>
-                </tr>
-              </table>
+              <div class="price__table-wrapper">
+                <table class="price__table">
+                  <tr class="price__table-row">
+                    <th class="price__table-cell visually-hidden"><span class="visually-hidden">Тариф</span></th>
+                    <th class="price__table-rate" rowspan="2">База<br><span class="price__table-price">1,99 USD</span></th>
+                    <th class="price__table-rate" rowspan="2">Стандарт<br><span class="price__table-price">3,99 USD</span></th>
+                    <th class="price__table-rate" rowspan="2">Анлим<br><span class="price__table-price">9,99 USD</span></th>
+                  </tr>
+                  <tr class="price__table-row">
+                    <th class="price__table-cell visually-hidden">Цена</th>
+                  </tr>
+                  <tr class="price__table-row">
+                    <th class="price__table-header">Розовый фильтр</th>
+                    <td class="price__table-cell price__table-cell--yes" data-title="розовый фильтр"><span class="visually-hidden">да</span></td>
+                    <td class="price__table-cell price__table-cell--yes" data-title="розовый фильтр"><span class="visually-hidden">да</span></td>
+                    <td class="price__table-cell price__table-cell--yes" data-title="розовый фильтр"><span class="visually-hidden">да</span></td>
+                  </tr>
+                  <tr class="price__table-row">
+                    <th class="price__table-header">Смайлики</th>
+                    <td class="price__table-cell price__table-cell--no" data-title="Смайлики"><span class="visually-hidden">нет</span></td>
+                    <td class="price__table-cell price__table-cell--yes" data-title="Смайлики"><span class="visually-hidden">да</span></td>
+                    <td class="price__table-cell price__table-cell--yes" data-title="Смайлики"><span class="visually-hidden">да</span></td>
+                  </tr>
+                  <tr class="price__table-row">
+                    <th class="price__table-header">Комментарии</th>
+                    <td class="price__table-cell price__table-cell--no" data-title="Комментарии"><span class="visually-hidden">нет</span></td>
+                    <td class="price__table-cell price__table-cell--no" data-title="Комментарии"><span class="visually-hidden">нет</span></td>
+                    <td class="price__table-cell price__table-cell--yes" data-title="Комментарии"><span class="visually-hidden">да</span></td>
+                  </tr>
+                </table>
+              </div>
             <p class="price__toggles slider__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle slider__toggle--current" type="button">2</button>
               <button class="slider__toggle" type="button">3</button>
             </p>
+          </div>
         </div>
-      </div>
       </section>
       <section class="feedback">
         <div class="container">
