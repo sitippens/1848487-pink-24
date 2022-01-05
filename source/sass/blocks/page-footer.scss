@@ -3,10 +3,49 @@
   text-align: center;
 }
 
+.page-footer__logo {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 145px;
+  height: 40px;
+  background-image: url("../img/glasses.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
+.page-footer__logo-img {
+  position: absolute;
+  top: 16px;
+  color: $darkgrey-1;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $darkgrey-1;
+  }
+}
+
+.page-footer__social {
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
 .page-footer__copyright {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 0;
+  padding-bottom: 41px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,11 +58,40 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .page-footer__logo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-footer__social {
+    padding: 0;
+    padding-top: 3px;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+    padding-top: 11px;
+    justify-content: end;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 70px;
     height: 197px;
+  }
+
+  .page-footer__social {
+    padding-top: 4px;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
+  }
+
+  .page-footer__logo-img {
+    display: none;
+    background-image: none;
   }
 }

@@ -19,6 +19,15 @@
   &--white {
     border: 3px $white solid;
     color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $pink;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
   }
 
   &--grey {
@@ -26,4 +35,6 @@
     border: 3px $textcolor solid;
     color: $textcolor;
   }
+
+
 }
