@@ -12,6 +12,8 @@
   padding-right: 38px;
   grid-template-columns: 47px 43px 44px;
   column-gap: 35px;
+  list-style-type: none;
+  margin: 0;
 }
 
 .banner__link--ios {
@@ -143,11 +145,6 @@
     // padding-top: 181px;
     padding-bottom: 130px;
   }
-}
-
-.banner__list {
-  list-style-type: none;
-  margin: 0;
 }
 
 .banner__wrapper {

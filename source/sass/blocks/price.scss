@@ -6,18 +6,14 @@
 
 .price__table {
   display: table;
-  width: 1120px;
+  width: 828px;
   margin: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 .price__table-wrapper {
   overflow-x: scroll;
-}
-
-.price__table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin: 0;
 }
 
 .price__table-rate {
@@ -41,14 +37,13 @@
   text-transform: uppercase;
   border: 2px solid $bordercolor;
   background-color: $white;
-  visibility: hidden;
-  border: none;
 }
 
 .price__table-cell {
   border: 2px solid $bordercolor;
   background-color: $white;
   width: 276px;
+  height: 59px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: left;
@@ -72,6 +67,10 @@
   }
 }
 
+.price__table-header--hidden {
+  display: none;
+}
+
 .price__table-price {
   font-weight: 300;
   font-size: 18px;
@@ -88,16 +87,13 @@
 @media (min-width: $tablet-width) {
   .price__table-wrapper {
     overflow-x: hidden;
+    max-width: $tablet-width;
+    padding: 0 20px;
+    margin: 0 auto;
   }
 
   .price__table {
     width: 612px;
-  }
-
-  .price__table-wrapper {
-    max-width: $tablet-width;
-    padding: 0 20px;
-    margin: 0 auto;
   }
 
   .price__table-header {
@@ -118,12 +114,17 @@
 
   .price__table-cell {
     width: 153px;
+    height: 45px;
     padding: 0;
     background-position: center;
 
     &::after {
       display: none;
     }
+  }
+
+  .price__table-header--hidden {
+    display: block;
   }
 }
 
