@@ -38,15 +38,14 @@
 
 .feedback__map {
   overflow: hidden;
-  padding-bottom: 56.25%;
   position: relative;
-  height: 0;
+  height: 200px;
 }
 
 .feedback__map iframe {
   left: 0;
   top: 0;
-  height: 100%;
+  height: 200px;
   width: 100%;
   position: absolute;
 }
@@ -66,6 +65,14 @@
     font-size: 40px;
     line-height: 54px;
   }
+
+  .feedback__map {
+    height: 374px;
+  }
+
+  .feedback__map iframe {
+    height: 374px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -80,5 +87,13 @@
 
   .feedback__item {
     width: 33.33%;
+  }
+
+  .feedback__map {
+    height: 502px;
+  }
+
+  .feedback__map iframe {
+    height: 502px;
   }
 }
