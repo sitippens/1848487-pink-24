@@ -1,42 +1,148 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background:
-    url("../img/phone-mobile.png") no-repeat bottom left,
-    url("../img/back-mobile.png") no-repeat;
   color: $white;
   margin: 0 auto;
+  overflow-x: hidden;
 
   &--inner {
-    background:
-    url("../img/back-mobile.png") no-repeat;
+    background: url("../img/back-mobile.png") no-repeat;
     background-size: cover;
   }
 }
 
+.page-header__toggle {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.page-header__menu--closed .page-header__toggle:hover::before {
+  background-color: $pink;
+  box-shadow:
+    0 10px 0 0 ($pink),
+    0 20px 0 0 ($pink);
+}
+
+.page-header__menu--closed .page-header__toggle:active::before {
+  background-color: $pink;
+  opacity: 30%;
+}
+
+.page-header__menu--closed .page-header__nav {
+  display: none;
+}
+
+.page-header__menu--opened .page-header__toggle {
+  top: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $pink;
+    opacity: 30%;
+  }
+}
+
+.page-header__menu--opened .page-header__nav {
+  display: block;
+}
+
+.page-header__menu--opened .page-header__logo-wrapper {
+  background-color: $darkgrey-1;
+  z-index: 1;
+  border-bottom: 1px solid $black;
+}
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
 .page-header__wrapper {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.3);
+  height: 66px;
+  z-index: 1;
 }
 
 .page-header__logo {
+  margin-left: 20px;
   height: 23px;
+  display: block;
 }
 
-.page-header__toggle {
-  width: 50px;
-  height: 24px;
-  //background-image: url("../img/open-menu-btn.svg");
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-desktop {
+  display: none;
+}
+
+.page-header__logo-wrapper {
+  min-height: 66px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     background:
-      url("../img/phone-tablet.png") no-repeat,
-      url("../img/back-tablet.png") no-repeat;
-    background-size: cover;
+      url("../img/phone-tablet.png") no-repeat bottom center,
+      url("../img/back-tablet.png") no-repeat center / cover;
+  }
+
+  .page-header__logo-wrapper {
+    min-height: 110px;
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  .page-header__toggle {
+    top: 43px;
   }
 
   .page-header--inner {
@@ -45,7 +151,25 @@
   }
 
   .page-header__logo {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+    margin-left: 20px;
     height: 40px;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 
   .page-header__wrapper {
@@ -56,9 +180,8 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background:
-      url("../img/phone-desktop.png") no-repeat bottom right,
-      url("../img/back-desktop.png") no-repeat;
-    background-size: cover;
+      url("../img/phone-desktop.png") no-repeat bottom center,
+      url("../img/back-desktop.png") no-repeat center / cover;
   }
 
   .page-header--inner {
@@ -67,18 +190,32 @@
     background-size: cover;
   }
 
-  .page-header__logo {
-    height: 40px;
+  .page-header__menu--closed .page-header__nav {
+    display: block;
   }
 
   .page-header__toggle {
     display: none;
   }
 
-  .logo-nav__wrapper {
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
+    margin-left: 0;
+  }
+
+  .page-header__logo-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 35px;
+    padding: 0;
+  }
+
+  .page-header__menu--opened .page-header__logo-wrapper {
+    background-color: transparent;
+    border-bottom: none;
   }
 }

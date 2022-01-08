@@ -6,3 +6,15 @@
   padding-right: 15px;
   padding-top: 6px;
 }
+
+.copyright__logo {
+  color: $pink;
+
+  &:hover {
+    color: $darkgrey-1;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+}
