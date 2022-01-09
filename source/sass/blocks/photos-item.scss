@@ -13,6 +13,7 @@
 
   &--first {
     height: 137px;
+    width: 100vw;
   }
 }
 
@@ -40,10 +41,18 @@
   flex-direction: column;
 }
 
+.photos-item__author {
+  padding-top: 25px;
+}
+
 .photos-item__caption {
   background-color: $lightgrey;
   margin-bottom: 20px;
   padding-bottom: 26px;
+
+  &--first {
+    text-align: left;
+  }
 }
 
 .photos-item__caption-name {
@@ -64,20 +73,31 @@
   margin: 0;
   padding-left: 17px;
   padding-right: 10px;
+  padding-bottom: 25px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }
 
 .photos-item__caption-likes {
+  position: relative;
   padding-left: 48px;
   color: $pink;
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-}
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 17px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/heart.svg");
+  }
+}
 
 @media (min-width: $tablet-width) {
   .photos-item__pic {
