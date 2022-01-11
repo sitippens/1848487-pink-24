@@ -45,6 +45,9 @@
 
 .page-header__menu--closed .page-header__toggle:active::before {
   background-color: $pink;
+  box-shadow:
+    0 10px 0 0 ($pink),
+    0 20px 0 0 ($pink);
   opacity: 30%;
 }
 
@@ -135,7 +138,7 @@
       url("../img/back-tablet.png") no-repeat center / cover;
 
     &--inner {
-      background: url("../img/back-tablet.png") no-repeat center / cover;
+      background: url("../img/back-tablet.png") no-repeat top / cover;
       background-repeat: no-repeat;
     }
   }
@@ -187,6 +190,7 @@
 
   .page-header--inner {
     background-image: url("../img/back-desktop.png");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
