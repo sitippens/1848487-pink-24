@@ -108,9 +108,10 @@
 
   &:hover {
     border: 2px solid $darkgrey-1;
+    outline: none;
   }
 
-  &:not(:placeholder-shown) {
+  &:focus {
     outline: none;
     border: 2px solid $pink;
   }
@@ -218,6 +219,16 @@
   line-height: 30px;
   color: $textcolor;
   border: 2px solid $bordercolor;
+
+  &:hover {
+    border: 2px solid $darkgrey-1;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $pink;
+  }
 }
 
 .form__textarea::placeholder {
@@ -321,10 +332,6 @@
 
   .form__label-checkbox {
     padding-left: 117px;
-
-    &--last-child {
-      padding-bottom: 61px;
-    }
   }
 
   .form__label-radio {
@@ -335,6 +342,7 @@
     &--contacts {
       order: -1;
       margin-bottom: 22px;
+      background: transparent;
     }
   }
 
@@ -356,6 +364,7 @@
         background-image: url("../img/phone-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
+        z-index: -1;
       }
 
       &:not(:last-child) {
