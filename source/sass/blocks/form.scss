@@ -146,6 +146,18 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+
+  &:hover {
+    .form__mark-checkbox {
+      border: 2px solid $darkgrey-1;
+    }
+  }
+
+  &:active {
+    .form__mark-checkbox {
+      border: 2px solid $pink;
+    }
+  }
 }
 
 .form__item {
@@ -189,20 +201,6 @@
   height: 35px;
   border-radius: 1px;
   border: 2px solid $bordercolor;
-}
-
-.form__label-checkbox {
-  &:hover {
-    .form__mark-checkbox {
-      border: 2px solid $darkgrey-1;
-    }
-  }
-
-  &:active {
-    .form__mark-checkbox {
-      border: 2px solid $pink;
-    }
-  }
 }
 
 .form__input-checkbox:focus-visible + .form__mark-checkbox {
