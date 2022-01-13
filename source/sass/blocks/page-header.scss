@@ -45,6 +45,9 @@
 
 .page-header__menu--closed .page-header__toggle:active::before {
   background-color: $pink;
+  box-shadow:
+    0 10px 0 0 ($pink),
+    0 20px 0 0 ($pink);
   opacity: 30%;
 }
 
@@ -133,6 +136,11 @@
     background:
       url("../img/phone-tablet.png") no-repeat bottom center,
       url("../img/back-tablet.png") no-repeat center / cover;
+
+    &--inner {
+      background: url("../img/back-tablet.png") no-repeat top / cover;
+      background-repeat: no-repeat;
+    }
   }
 
   .page-header__logo-wrapper {
@@ -143,11 +151,6 @@
 
   .page-header__toggle {
     top: 43px;
-  }
-
-  .page-header--inner {
-    background-image: url("../img/back-tablet.png");
-    background-repeat: no-repeat;
   }
 
   .page-header__logo {
@@ -168,6 +171,7 @@
     }
 
     &:active {
+      color: $white;
       opacity: 30%;
     }
   }
@@ -186,6 +190,7 @@
 
   .page-header--inner {
     background-image: url("../img/back-desktop.png");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -211,7 +216,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 130px;
   }
 
   .page-header__menu--opened .page-header__logo-wrapper {

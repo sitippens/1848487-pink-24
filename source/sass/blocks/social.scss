@@ -37,4 +37,12 @@
   &--yt {
     background-image: url("../img/logo-youtube.svg");
   }
+
+  &:hover {
+    border: 3px solid $darkgrey-1;
+  }
+
+  &:active {
+    opacity: 10%;
+  }
 }

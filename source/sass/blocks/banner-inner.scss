@@ -1,4 +1,5 @@
 .banner-inner__title {
+  position: relative;
   margin: 0;
   padding-top: 36px;
   padding-bottom: 51px;
@@ -6,10 +7,28 @@
   font-size: 24px;
   line-height: 33px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    top: -66px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background: url("../img/back-mobile.png") no-repeat center / cover;
+  }
+
+
   @media (min-width: $tablet-width) {
     padding-top: 81px;
     padding-bottom: 74px;
     font-size: 50px;
     line-height: 68px;
+
+    &::before {
+      display: none;
+    }
   }
 }

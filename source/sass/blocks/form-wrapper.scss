@@ -11,6 +11,19 @@
   font-size: 18px;
   line-height: 30px;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $bordercolor;
+  }
 }
 
 .form-wrapper__star {
