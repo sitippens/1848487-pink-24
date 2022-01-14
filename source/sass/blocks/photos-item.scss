@@ -176,16 +176,13 @@
 
 @media (min-width: $desktop-width) {
   .photos-item__pic-mobile {
-    // display: none;
+    height: 400px;
   }
 
   .photos-item {
-    // display: block;
     width: 100%;
-    // height: 555px;
 
     &--first {
-      // height: 506px;
     }
   }
 

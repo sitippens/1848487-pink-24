@@ -154,7 +154,11 @@
   }
 
   .page-header__logo {
-    display: none;
+    // display: none;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet.png@2x");
+      background-size: 1200px auto;
+    }
   }
 
   .page-header__logo-desktop {
@@ -162,7 +166,7 @@
   }
 
   .page-header__logo-tablet {
-    display: block;
+    // display: block;
     margin-left: 20px;
     height: 40px;
 
@@ -208,7 +212,7 @@
   }
 
   .page-header__logo-desktop {
-    display: block;
+    // display: block;
     margin-left: 0;
   }
 
