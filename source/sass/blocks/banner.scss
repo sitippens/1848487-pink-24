@@ -108,7 +108,12 @@
     z-index: -1;
     background:
       url("../img/phone-mobile.png") no-repeat bottom center,
-      url("../img/back-mobile.png") no-repeat center / cover;
+      url("../img/back-mobile.png") no-repeat top center / cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-mobile@2x.png"), url("../img/back-mobile@2x.png"),;
+      background-size: 320px 286px, 100% 462px;
+    }
   }
 
   @media (min-width: $tablet-width) {
