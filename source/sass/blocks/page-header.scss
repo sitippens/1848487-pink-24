@@ -203,7 +203,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background:
-      url("../img/phone-desktop.png") no-repeat bottom right -226px,
+      url("../img/phone-desktop.png") no-repeat bottom center,
       url("../img/back-desktop.png") no-repeat center / cover;
 
     @media (min-resolution: 2dppx) {
