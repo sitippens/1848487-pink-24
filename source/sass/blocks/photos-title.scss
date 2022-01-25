@@ -1,16 +1,18 @@
-
-
 .photos-title__text {
   margin: 0;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 49px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-}
 
-@media (min-width: $tablet-width) {
-  .photos-title__text {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
+    padding: 91px 50px 76px 50px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    padding: 91px 130px 88px 130px;
   }
 }

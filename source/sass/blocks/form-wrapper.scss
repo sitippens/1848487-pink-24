@@ -1,6 +1,6 @@
 .form-wrapper__button {
-  margin-top: 52px;
-  margin-bottom: 46px;
+  margin-top: 46px;
+  margin-bottom: 36px;
   width: 276px;
   height: 59px;
   background-color: $green;
@@ -11,6 +11,7 @@
   font-size: 18px;
   line-height: 30px;
   border: none;
+  border-radius: 1px;
   cursor: pointer;
 
   &:hover {
@@ -26,6 +27,15 @@
   }
 }
 
+.form-wrapper__text {
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
+}
+
 .form-wrapper__star {
   color: $pink;
 }
@@ -37,15 +47,34 @@
   }
 
   .form-wrapper__button {
-    margin-top: 123px;
+    width: 296px;
+    margin-top: 67px;
     margin-bottom: 0;
   }
 
   .form-wrapper__required {
-    padding-top: 148px;
+    padding-top: 82px;
   }
 
   .form-wrapper__text {
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-wrapper__button {
+    margin-top: 65px;
+  }
+
+  .form-wrapper__required {
+    display: flex;
+  }
+
+  .form-wrapper__text {
+    display: flex;
+  }
+
+  .form-wrapper__text--hidden {
+    display: block;
   }
 }

@@ -1,6 +1,5 @@
 .price {
-  padding-top: 93px;
-  padding-bottom: 45px;
+  padding-top: 77px;
   background-color: $lightgrey;
 }
 
@@ -17,8 +16,10 @@
 }
 
 .price__table-rate {
+  padding-bottom: 27px;
+  padding-top: 10px;
   width: 276px;
-  height: 94px;
+  height: 100px;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -26,6 +27,26 @@
   background-color: $darkgrey-1;
   color: $white;
   border: 2px solid $lightgrey;
+
+  &--hit {
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg width='74' height='74' viewBox='0 0 74 74' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M74 0L37 37L0 74V41L41 0H74Z' fill='%23D22856'/%3E%3C/svg%3E%0A");
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    &::before {
+      top: 6px;
+      left: 6px;
+      content: "ХИТ";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      transform: rotate(311deg);
+    }
+  }
 }
 
 .price__table-header {
@@ -43,7 +64,7 @@
   border: 2px solid $bordercolor;
   background-color: $white;
   width: 276px;
-  height: 59px;
+  height: 60px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: left;
@@ -57,13 +78,13 @@
   &--yes {
     background-image: url("../img/yes.svg");
     background-repeat: no-repeat;
-    background-position: center right 20px;
+    background-position: center right 15px;
   }
 
   &--no {
     background-image: url("../img/no.svg");
     background-repeat: no-repeat;
-    background-position: center right 20px;
+    background-position: center right 15px;
   }
 }
 
@@ -85,6 +106,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .price {
+    padding-top: 51px;
+  }
+
   .price__table-wrapper {
     overflow-x: hidden;
     max-width: $tablet-width;
@@ -93,7 +118,7 @@
   }
 
   .price__table {
-    width: 612px;
+    width: 617px;
   }
 
   .price__table-header {
@@ -105,11 +130,27 @@
     border: 1px solid $bordercolor;
     padding: 6px 5px;
     border-right: none;
+    text-align: left;
+
+    &--hidden {
+      padding-left: 17px;
+    }
   }
 
   .price__table-rate {
     width: 152px;
     height: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &--hit {
+      background-size: 61px 61px;
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+    }
   }
 
   .price__table-cell {
@@ -126,24 +167,32 @@
   .price__table-header--hidden {
     display: block;
   }
+
+  .price__toggles {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .price {
+    padding-top: 57px;
+  }
+
   .price__table {
-    width: 935px;
+    width: 943px;
   }
 
   .price__table-header {
     width: 234px;
     height: 59px;
     font-size: 18px;
-    padding: 10px 5px;
+    padding: 14px 21px;
   }
 
   .price__table-rate {
     font-size: 18px;
-    width: 233px;
-    height: 94px;
+    width: 236px;
+    height: 100px;
   }
 
   .price__table-price {

@@ -16,9 +16,17 @@
   text-align: center;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
   &--white {
     border: 3px $white solid;
     color: $white;
+
+    @media (min-width: $desktop-width) {
+    font-size: 21px;;
+    }
 
     &:hover {
       background-color: $white;

@@ -1,11 +1,15 @@
 .banner-inner__title {
   position: relative;
   margin: 0;
-  padding-top: 36px;
+  padding-top: 29px;
   padding-bottom: 51px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+
+  &--form {
+    padding-bottom: 44px;
+  }
 
   &::before {
     content: "";
@@ -17,13 +21,13 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    background: url("../img/back-mobile.png") no-repeat center / cover;
+    background: url("../img/back-mobile.jpg") no-repeat center / cover;
   }
 
 
   @media (min-width: $tablet-width) {
-    padding-top: 81px;
-    padding-bottom: 74px;
+    padding-top: 66px;
+    padding-bottom: 60px;
     font-size: 50px;
     line-height: 68px;
 
@@ -31,4 +35,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 89px;
+  }
+
 }

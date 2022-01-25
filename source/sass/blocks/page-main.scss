@@ -3,7 +3,6 @@
 }
 
 .page-main__text {
-  // display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -22,15 +21,14 @@
 }
 
 .page-main__text-wrapper {
-  padding-top: 54px;
-  padding-bottom: 26px;
+  padding-top: 44px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
-    padding-bottom: 82px;
+    padding: 91px 60px 74px 60px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 70px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
   }
 }
