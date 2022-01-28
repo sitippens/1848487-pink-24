@@ -133,6 +133,7 @@
     text-align: left;
 
     &--hidden {
+      display: block;
       padding-left: 17px;
     }
   }
@@ -162,10 +163,6 @@
     &::after {
       display: none;
     }
-  }
-
-  .price__table-header--hidden {
-    display: block;
   }
 
   .price__toggles {

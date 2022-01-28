@@ -11,9 +11,21 @@
 
   <style>
     html {
-      background-image: url("desktop.png");
+      background-image: url("index-mobile.png");
       background-position: center top;
       background-repeat: no-repeat;
+    }
+
+    @media (min-width:660px) {
+      html {
+        background-image: url("index-tablet.png");
+      }
+    }
+
+    @media (min-width:1200px) {
+      html {
+        background-image: url("index-desktop.png");
+      }
     }
 
     body {
@@ -82,7 +94,7 @@
             </li>
             <li class="advantages__item advantages__item--friends">
               <h3 class="advantages__title">Заводит новых&nbsp;друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и заводите новых</p>
+              <p class="advantages__description advantages__description--friends">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и заводите новых</p>
             </li>
           </ul>
             <div class="advantages__phone">
@@ -190,9 +202,14 @@
         </div>
         <div class="feedback__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715590237!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640275022404!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
+            <img class="feedback__map-img" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+          </picture>
         </div>
       </section>
-  </main>
+    </main>
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__wrapper">

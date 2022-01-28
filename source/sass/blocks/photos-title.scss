@@ -1,6 +1,6 @@
 .photos-title__text {
   margin: 0;
-  padding-top: 70px;
+  padding-top: 44px;
   padding-bottom: 49px;
   font-weight: normal;
   font-size: 14px;
@@ -8,11 +8,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding: 91px 50px 76px 50px;
+    padding: 90px;
+    padding-bottom: 77px;
   }
 
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 91px 130px 88px 130px;
   }
 }

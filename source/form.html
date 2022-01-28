@@ -10,9 +10,21 @@
 
   <style>
     html {
-      background-image: url("form-desktop.png");
+      background-image: url("form-mobile.png");
       background-position: center top;
       background-repeat: no-repeat;
+    }
+
+    @media (min-width:660px) {
+      html {
+        background-image: url("form-tablet.png");
+      }
+    }
+
+    @media (min-width:1200px) {
+      html {
+        background-image: url("form-desktop.png");
+      }
     }
 
     body {
