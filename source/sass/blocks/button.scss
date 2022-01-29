@@ -42,5 +42,15 @@
     opacity: 0.1;
     border: 3px $textcolor solid;
     color: $textcolor;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $darkgrey-1;
+      opacity: 0.3;
+    }
   }
 }

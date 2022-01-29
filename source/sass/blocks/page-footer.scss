@@ -40,8 +40,8 @@
 }
 
 .page-footer__social {
-  padding-top: 41px;
-  padding-bottom: 41px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 
 .page-footer__copyright {
@@ -89,7 +89,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 55px;
+    padding-top: 70px;
     height: 197px;
 
     &--inner {
@@ -101,8 +101,8 @@
     }
   }
 
-  .page-footer__social {
-    padding-top: 4px;
+  .page-footer__copyright {
+    padding-top: 8px;
   }
 
   .page-footer__logo-hidden {

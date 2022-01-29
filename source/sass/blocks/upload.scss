@@ -3,7 +3,7 @@
 }
 
 .upload__form {
-  padding-top: 9px;
+  padding-top: 20px;
   padding-bottom: 41px;
   position: relative;
 
@@ -22,7 +22,7 @@
 }
 
 .upload__title {
-  padding: 22px 13px 52px 13px;
+  padding: 22px 13px 41px 13px;
   margin: 0;
   font-weight: normal;
   font-size: 14px;
@@ -47,6 +47,15 @@
 
 .upload__button-submit {
   margin-bottom: 12px;
+
+  &:hover {
+    color: $white;
+    background-color: $pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .upload__tools {
@@ -70,6 +79,10 @@
 
   &--contrast {
     margin-top: 4px;
+  }
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.5);
   }
 }
 
@@ -113,6 +126,10 @@
   background-color: $white;
   border-radius: 50%;
   cursor: pointer;
+
+  &:active {
+    background-color: $pink;
+  }
 }
 
 .upload__input::-moz-range-thumb {
