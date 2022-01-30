@@ -1,6 +1,6 @@
 .slider__toggles {
   padding-top: 30px;
-  padding-bottom: 57px;
+  padding-bottom: 35px;
   margin: 0 auto;
   display: flex;
   column-gap: 19px;
@@ -16,6 +16,7 @@
 @media (min-width: $tablet-width) {
   .slider__toggles {
     padding-top: 36px;
+    padding-bottom: 13px;
 
     &--hidden {
       display: none;

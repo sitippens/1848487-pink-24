@@ -3,8 +3,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  background: linear-gradient(177deg, $white 94%, $lightgrey 6%);
-  background-position: 0 370px;
+  // background: linear-gradient(177deg, $white 94%, $lightgrey 6%);
+  // background-position: 0 370px;
 }
 
 .reviews__buttons {
@@ -42,8 +42,8 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 41px;
-    background: linear-gradient(177deg, $white 89%, $lightgrey 11%);
-    background-position: 0 690px;
+    // background: linear-gradient(177deg, $white 89%, $lightgrey 11%);
+    // background-position: 0 690px;
   }
 
   .reviews__author-info {
@@ -74,9 +74,9 @@
   .reviews {
     position: relative;
     padding-top: 135px;
-    padding-bottom: 133px;
-    background: linear-gradient(175deg, $white 83%, $lightgrey 17%);
-    background-position: 0 1010px;
+    padding-bottom: 35px;
+    // background: linear-gradient(175deg, $white 83%, $lightgrey 17%);
+    // background-position: 0 1010px;
   }
 
   .reviews__item {

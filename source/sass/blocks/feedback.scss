@@ -74,7 +74,7 @@
 @media (min-width: $tablet-width) {
   .feedback {
     position: relative;
-    padding-top: 115px;
+    padding-top: 43px;
   }
 
   .feedback__text {
@@ -116,7 +116,7 @@
     height: 374px;
 
     &::before {
-      top: -55px;
+      top: -70px;
       background-size: 1439px 123px;
     }
   }
@@ -128,7 +128,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    padding-top: 159px;
+    padding-top: 58px;
   }
 
   .feedback__title {
