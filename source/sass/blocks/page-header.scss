@@ -221,7 +221,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background:
-      url("../img/phone-tablet.png") no-repeat bottom right,
+      url("../img/phone-tablet.png") no-repeat bottom center,
       url("../img/back-tablet.jpg") no-repeat center / cover;
 
     @media (min-resolution: 2dppx) {
@@ -262,13 +262,13 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background:
-      url("../img/phone-desktop.png") no-repeat bottom right 60px,
+      url("../img/phone-desktop.png") no-repeat bottom center,
       url("../img/back-desktop.jpg") no-repeat center / cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone-desktop@2x.png"), url("../img/back-desktop@2x.jpg");
       background-size: 924px 645px, 2560px 853px;
-      background-position: bottom right 66px, center;
+      background-position: bottom center, center;
     }
   }
 
