@@ -4,7 +4,11 @@
   line-height: 18px;
   margin: 0;
   padding-right: 15px;
-  padding-top: 6px;
+  padding-top: 9px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__logo {

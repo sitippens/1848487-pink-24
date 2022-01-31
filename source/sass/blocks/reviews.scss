@@ -1,12 +1,24 @@
 .reviews {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  // background: linear-gradient(177deg, $white 94%, $lightgrey 6%);
+  // background-position: 0 370px;
+}
+
+.reviews__buttons {
+  display: none;
+}
+
+.reviews__button {
+  border: none;
+  background-color: transparent;
 }
 
 .reviews__author-name {
   display: block;
-  padding-top: 50px;
+  padding-top: 44px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -23,17 +35,15 @@
 }
 
 .reviews__text {
-  padding-top: 31px;
-  margin: 0;
-}
-
-.reviews__toggles {
+  padding-top: 12px;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-bottom: 40px;
+    padding-top: 41px;
+    // background: linear-gradient(177deg, $white 89%, $lightgrey 11%);
+    // background-position: 0 690px;
   }
 
   .reviews__author-info {
@@ -50,6 +60,7 @@
 
   .reviews__author-name {
     font-size: 20px;
+    padding-top: 36px;
   }
 
   .reviews__text {
@@ -57,17 +68,47 @@
     line-height: 30px;
     order: -1;
   }
-
-  .reviews__buttons,
-  .reviews__toggles {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 35px;
+    // background: linear-gradient(175deg, $white 83%, $lightgrey 17%);
+    // background-position: 0 1010px;
+  }
+
+  .reviews__item {
+    position: relative;
+  }
+
   .reviews__buttons {
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 78px;
+  }
+
+  .reviews__button {
+    width: 22px;
+    height: 41px;
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='41' viewBox='0 0 22 41' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  d='M2.0413 20.5035L21.7483 1.4144C21.8281 1.3379 21.8914 1.24683 21.9346 1.14646C21.9778 1.04608 22 0.938398 22 0.829635C22 0.720871 21.9778 0.613187 21.9346 0.512814C21.8914 0.41244 21.8281 0.321369 21.7483 0.24487C21.6686 0.167255 21.5738 0.105671 21.4694 0.0636507C21.365 0.0216304 21.2532 0 21.1401 0C21.0271 0 20.9153 0.0216304 20.8109 0.0636507C20.7065 0.105671 20.6117 0.167255 20.532 0.24487L0.252535 19.9088C0.17249 19.9862 0.108978 20.0781 0.0656429 20.1793C0.0223074 20.2805 0 20.389 0 20.4985C0 20.6081 0.0223074 20.7166 0.0656429 20.8178C0.108978 20.919 0.17249 21.0109 0.252535 21.0883L20.532 40.7621C20.6967 40.9157 20.9167 41.001 21.1453 41C21.3139 40.9985 21.4783 40.9488 21.6181 40.8572C21.7578 40.7656 21.8666 40.6362 21.9309 40.485C21.9952 40.3339 22.0122 40.1677 21.9797 40.0072C21.9473 39.8467 21.8668 39.6991 21.7483 39.5827L2.0413 20.5035Z' fill='%23283645'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
+    &--next {
+      transform: rotate(180deg);
+      padding-left: 912px;
+    }
   }
 
   .reviews__toggles {
@@ -80,5 +121,26 @@
 
   .reviews__age {
     font-size: 18px;
+  }
+
+  .reviews__text {
+    padding-top: 50px;
+    padding-right: 104px;
+    padding-left: 104px;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -64px;
+      left: 431px;
+      background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+      width: 79px;
+      height: 63px;
+    }
   }
 }

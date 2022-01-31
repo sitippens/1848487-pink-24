@@ -1,38 +1,48 @@
 .photos-item {
   text-align: left;
-  width: 100%;
+  margin-bottom: 20px;
 }
 
 .photos-item__pic {
-  display: none;
-}
-
-.photos-item__pic-mobile {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
 
   &--first {
-    height: 137px;
-    width: 100vw;
+    object-fit: cover;
   }
-}
-
-.photos-item__pic-tablet {
-  margin: 0 auto;
-  display: none;
-}
-
-.photos-item__pic-desktop {
-  margin: 0 auto;
-  display: none;
 }
 
 .photos-item__link {
   display: block;
+  height: 180px;
+  width: 100%;
+
+  &--first {
+    height: 137px;
+  }
 }
 
-.photos-item__link--first {
-  display: block;
+.photos-item__panorama-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "ПАНОРАМА ДНЯ";
+    top: -137px;
+    right: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: $pink;
+    width: 140px;
+    height: 36px;
+    color: $white;
+    text-align: center;
+    padding-top: 6px;
+  }
 }
 
 .photos-item__wrapper {
@@ -42,8 +52,7 @@
 
 .photos-item__caption {
   background-color: $lightgrey;
-  margin-bottom: 20px;
-  padding: 24px 17px 25px 17px;
+  padding: 20px 11px 18px 17px;
 
   &--first {
     text-align: left;
@@ -65,7 +74,7 @@
 
 .photos-item__caption-text {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 9px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -93,34 +102,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photos-item__pic {
-    display: block;
-  }
-
-  .photos-item__pic-mobile {
+  .photos-item__link {
     height: 300px;
+    width: 100%;
 
     &--first {
       height: 509px;
     }
   }
 
-  .photos-item__pic-tablet {
-    display: block;
-  }
-
-  .photos-item__pic-desktop {
-    display: none;
-  }
-
   .photos-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-    &--first {
-      margin: 0;
-    }
+    min-height: 455px;
+    margin: 0;
   }
 
   .photos-item__wrapper {
@@ -129,16 +124,24 @@
     gap: 20px;
   }
 
+  .photos-item__panorama-wrapper::before {
+    top: -452px;
+  }
+
   .photos-item__caption {
     display: flex;
     flex-direction: column;
-    padding: 20px 37px 20px 30px;
+    padding: 22px 37px 20px 30px;
     margin: 0;
     text-align: left;
     flex-grow: 1;
 
     &--first {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       margin-bottom: 50px;
+      padding-top: 25px;
+      padding-bottom: 9px;
     }
   }
 
@@ -146,23 +149,29 @@
     padding-left: 0;
 
     &::before {
-      top: 5px;
-      left: 220px;
+      top: 1px;
+      left: 226px;
     }
 
     &--first {
-      order: -1;
       margin-left: auto;
-      padding-right: 30px;
+      padding-right: 22px;
+      grid-row: 1;
+      grid-column: 2/-1;
 
       &::before {
         left: 105px;
+        top: 5px;
       }
     }
   }
 
   .photos-item__caption-text {
-    padding-bottom: 17px;
+    padding-bottom: 15px;
+
+    &--first {
+      grid-column: 1/-1;
+    }
   }
 
   .photos-item__caption-name {
@@ -175,33 +184,51 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photos-item__pic-mobile {
-    // display: none;
+  .photos-item {
+    min-height: 555px;
   }
 
-  .photos-item {
-    // display: block;
+  .photos-item__link {
+    height: 400px;
     width: 100%;
-    // height: 555px;
 
     &--first {
-      // height: 506px;
+      height: 506px;
     }
   }
 
-  .photos-item__pic {
-    display: block;
+  .photos-item__caption-likes {
+    &::before {
+      top: 5px;
+      left: 230px;
+    }
   }
 
-  .photos-item__pic-tablet {
-    display: none;
-  }
-
-  .photos-item__pic-desktop {
-    display: block;
+  .photos-item__caption-likes--first::before {
+    left: 104px;
   }
 
   .photos-item__wrapper {
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 54px;
+  }
+
+  .photos-item__panorama-wrapper::before {
+    right: 130px;
+  }
+
+  .photos-item__caption {
+    padding-top: 24px;
+    padding-left: 26px;
+
+    &--first {
+      padding-top: 25px;
+      padding-left: 27px;
+    }
+  }
+
+  .photos-item__caption-text {
+    padding-bottom: 13px;
   }
 }
