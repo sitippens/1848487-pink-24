@@ -3,11 +3,12 @@
   flex-direction: column;
   color: $white;
   margin: 0 auto;
-  // overflow-x: hidden;
+  overflow: hidden;
 
   &--inner {
     background: url("../img/back-mobile.jpg") no-repeat;
     background-size: cover;
+    overflow: inherit;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-mobile@2x.jpg");
@@ -131,6 +132,10 @@
 
 .page-header__menu--nojs .page-header__toggle {
   display: none;
+}
+
+.page-header__menu--nojs .main-nav__link--active {
+  text-decoration: none;
 }
 
 .page-header__menu--nojs .page-header__nav {

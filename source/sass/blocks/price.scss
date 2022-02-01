@@ -21,11 +21,14 @@
   margin: 0;
   border-spacing: 0;
   border-collapse: collapse;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.price__table-wrapper {
-  overflow-x: scroll;
-}
+// .price__table-wrapper {
+//   overflow-x: scroll;
+// }
 
 .price__table-rate {
   padding-bottom: 27px;
