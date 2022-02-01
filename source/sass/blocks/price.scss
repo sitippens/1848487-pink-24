@@ -26,9 +26,9 @@
   transform: translateX(-50%);
 }
 
-// .price__table-wrapper {
-//   overflow-x: scroll;
-// }
+.price__table-wrapper {
+  overflow: hidden;
+}
 
 .price__table-rate {
   padding-bottom: 27px;
