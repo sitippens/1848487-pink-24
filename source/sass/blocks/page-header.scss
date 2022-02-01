@@ -3,11 +3,12 @@
   flex-direction: column;
   color: $white;
   margin: 0 auto;
-  // overflow-x: hidden;
+  overflow: hidden;
 
   &--inner {
     background: url("../img/back-mobile.jpg") no-repeat;
     background-size: cover;
+    overflow: inherit;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-mobile@2x.jpg");
@@ -133,6 +134,10 @@
   display: none;
 }
 
+.page-header__menu--nojs .main-nav__link--active {
+  text-decoration: none;
+}
+
 .page-header__menu--nojs .page-header__nav {
   display: block;
   position: relative;
@@ -246,8 +251,8 @@
 
   .page-header__logo-wrapper {
     min-height: 110px;
-    padding-top: 27px;
-    padding-bottom: 36px;
+    padding-top: 22px;
+    padding-bottom: 31px;
   }
 
   .page-header__toggle {
@@ -255,7 +260,7 @@
   }
 
   .page-header__wrapper {
-    height: 110px;
+    // height: 110px;
   }
 }
 

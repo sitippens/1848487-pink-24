@@ -21,10 +21,13 @@
   margin: 0;
   border-spacing: 0;
   border-collapse: collapse;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .price__table-wrapper {
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .price__table-rate {
