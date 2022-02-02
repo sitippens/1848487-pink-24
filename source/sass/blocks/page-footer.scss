@@ -23,9 +23,13 @@
   }
 }
 
-.page-footer__logo-hidden {
-  display: none;
+.page-footer__logo-pink {
+  fill: $pink;
 }
+
+// .page-footer__logo-hidden {
+//   display: none;
+// }
 
 .page-footer__logo-img {
   color: $darkgrey-1;
@@ -37,6 +41,10 @@
   &:active {
     color: $darkgrey-1;
   }
+}
+
+.page-footer__logo-desktop {
+  display: none;
 }
 
 .page-footer__social {
@@ -101,11 +109,27 @@
     }
   }
 
+  .page-footer__logo-img {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:active {
+      color: $darkgrey-1;
+    }
+  }
+
   .page-footer__copyright {
     padding-top: 8px;
   }
 
-  .page-footer__logo-hidden {
-    display: block;
-  }
+  // .page-footer__logo-hidden {
+  //   display: block;
+  // }
 }
