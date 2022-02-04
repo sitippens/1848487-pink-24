@@ -6,6 +6,7 @@
   overflow: hidden;
 
   &--inner {
+    background-color: $darkgrey-1;
     background: url("../img/back-mobile.jpg") no-repeat;
     background-size: cover;
     overflow: inherit;
@@ -225,6 +226,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    background-color: $darkgrey-1;
     background:
       url("../img/phone-tablet.png") no-repeat bottom center,
       url("../img/back-tablet.jpg") no-repeat center / cover;
@@ -235,6 +237,7 @@
     }
 
     &--inner {
+      background-color: $darkgrey-1;
       background: url("../img/back-tablet.jpg") no-repeat top center;
 
       @media (min-resolution: 2dppx) {
@@ -251,8 +254,8 @@
 
   .page-header__logo-wrapper {
     min-height: 110px;
-    padding-top: 22px;
-    padding-bottom: 31px;
+    padding-top: 25px;
+    padding-bottom: 28px;
   }
 
   .page-header__toggle {
@@ -266,6 +269,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    background-color: $darkgrey-1;
     background:
       url("../img/phone-desktop.png") no-repeat bottom center,
       url("../img/back-desktop.jpg") no-repeat center / cover;
@@ -278,6 +282,7 @@
   }
 
   .page-header--inner {
+    background-color: $darkgrey-1;
     background-image: url("../img/back-desktop.jpg");
     background-position: top;
     background-repeat: no-repeat;

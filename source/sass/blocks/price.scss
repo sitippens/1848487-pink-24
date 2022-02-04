@@ -107,6 +107,10 @@
   display: none;
 }
 
+.price__table-cell--hidden {
+  display: none;
+}
+
 .price__table-price {
   font-weight: 300;
   font-size: 18px;
@@ -156,6 +160,11 @@
       display: block;
       padding-left: 17px;
     }
+  }
+
+  .price__table-cell--hidden {
+    display: block;
+    padding-left: 17px;
   }
 
   .price__table-rate {

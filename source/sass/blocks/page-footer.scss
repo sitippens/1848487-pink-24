@@ -27,10 +27,6 @@
   fill: $pink;
 }
 
-// .page-footer__logo-hidden {
-//   display: none;
-// }
-
 .page-footer__logo-img {
   color: $darkgrey-1;
 
@@ -49,7 +45,7 @@
 
 .page-footer__social {
   padding-top: 38px;
-  padding-bottom: 38px;
+  padding-bottom: 26px;
 }
 
 .page-footer__copyright {
@@ -75,7 +71,7 @@
 
   .page-footer__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 25% 50% 25%;
   }
 
   .page-footer__logo {
@@ -90,7 +86,7 @@
 
   .page-footer__copyright {
     padding: 0;
-    padding-top: 9px;
+    padding-top: 10px;
     justify-content: end;
   }
 }
@@ -128,8 +124,4 @@
   .page-footer__copyright {
     padding-top: 8px;
   }
-
-  // .page-footer__logo-hidden {
-  //   display: block;
-  // }
 }

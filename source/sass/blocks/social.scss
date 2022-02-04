@@ -10,12 +10,19 @@
   @media (min-width: $tablet-width) {
     padding: 0 17px;
     column-gap: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 72px;
+    padding: 0;
     column-gap: 4px;
   }
+}
+
+.social__item {
+  padding-bottom: 10px;
 }
 
 .social__link {

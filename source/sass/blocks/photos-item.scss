@@ -8,55 +8,17 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-
-  &--first {
-    object-fit: cover;
-  }
 }
 
 .photos-item__link {
   display: block;
   height: 180px;
   width: 100%;
-
-  &--first {
-    height: 137px;
-  }
-}
-
-.photos-item__panorama-wrapper {
-  margin-bottom: 20px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "ПАНОРАМА ДНЯ";
-    top: -137px;
-    right: 20px;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 24px;
-    background-color: $pink;
-    width: 140px;
-    height: 36px;
-    color: $white;
-    text-align: center;
-    padding-top: 6px;
-  }
-}
-
-.photos-item__wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .photos-item__caption {
   background-color: $lightgrey;
   padding: 20px 11px 18px 17px;
-
-  &--first {
-    text-align: left;
-  }
 }
 
 .photos-item__caption-name {
@@ -105,10 +67,6 @@
   .photos-item__link {
     height: 300px;
     width: 100%;
-
-    &--first {
-      height: 509px;
-    }
   }
 
   .photos-item {
@@ -118,16 +76,6 @@
     margin: 0;
   }
 
-  .photos-item__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .photos-item__panorama-wrapper::before {
-    top: -452px;
-  }
-
   .photos-item__caption {
     display: flex;
     flex-direction: column;
@@ -135,14 +83,6 @@
     margin: 0;
     text-align: left;
     flex-grow: 1;
-
-    &--first {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      margin-bottom: 50px;
-      padding-top: 25px;
-      padding-bottom: 9px;
-    }
   }
 
   .photos-item__caption-likes {
@@ -152,26 +92,10 @@
       top: 1px;
       left: 226px;
     }
-
-    &--first {
-      margin-left: auto;
-      padding-right: 22px;
-      grid-row: 1;
-      grid-column: 2/-1;
-
-      &::before {
-        left: 105px;
-        top: 5px;
-      }
-    }
   }
 
   .photos-item__caption-text {
     padding-bottom: 15px;
-
-    &--first {
-      grid-column: 1/-1;
-    }
   }
 
   .photos-item__caption-name {
@@ -191,10 +115,6 @@
   .photos-item__link {
     height: 400px;
     width: 100%;
-
-    &--first {
-      height: 506px;
-    }
   }
 
   .photos-item__caption-likes {
@@ -204,28 +124,9 @@
     }
   }
 
-  .photos-item__caption-likes--first::before {
-    left: 104px;
-  }
-
-  .photos-item__wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 54px;
-  }
-
-  .photos-item__panorama-wrapper::before {
-    right: 130px;
-  }
-
   .photos-item__caption {
     padding-top: 24px;
     padding-left: 26px;
-
-    &--first {
-      padding-top: 25px;
-      padding-left: 27px;
-    }
   }
 
   .photos-item__caption-text {

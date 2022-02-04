@@ -1,4 +1,4 @@
-.fixed-overlay {
+.modal {
   position: fixed;
   overflow: auto;
   top: 0;
@@ -18,7 +18,7 @@
   }
 }
 
-.modal {
+.modal__wrapper {
   position: absolute;
   left: 0;
   top: 50%;
@@ -27,14 +27,14 @@
   text-align: center;
 }
 
-.modal-container {
+.modal__container {
   background-color: $white;
   max-width: 320px;
-  padding: 40px 20px 52px 20px;
+  padding: 40px 20px;
   margin: 0 auto;
 
   &--success {
-    padding-bottom: 33px;
+    // padding-bottom: 33px;
   }
 }
 
@@ -53,7 +53,7 @@
   line-height: 24px;
 
   &--failure {
-    padding-bottom: 42px;
+    // padding-bottom: 42px;
   }
 }
 
@@ -81,22 +81,25 @@
 
 .modal__button-wrapper {
   background-color: $lightgrey;
-  padding-top: 53px;
   padding-bottom: 51px;
+
+  &--success {
+    padding-top: 46px;
+  }
+
+  &--failure {
+    background-color: transparent;
+  }
 }
 
 
 @media (min-width: $tablet-width) {
-  .modal-container {
+  .modal__container {
     max-width: 460px;
-    padding: 40px 70px 55px 70px;
-
-    &--success {
-      padding-bottom: 0;
-    }
+    padding: 40px 70px 0 70px;
   }
 
-  .modal {
+  .modal__wrapper {
     left: 15%;
   }
 
@@ -109,7 +112,7 @@
   .modal__text {
     font-size: 18px;
     padding-top: 22px;
-    padding-bottom: 35px;
+    padding-bottom: 0;
 
     &--success {
       padding-bottom: 32px;
@@ -123,13 +126,17 @@
   .modal__button-wrapper {
     padding-top: 51px;
     padding-bottom: 52px;
+
+    &--failure {
+      padding-top: 38px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .modal-container {
+  .modal__container {
     max-width: 780px;
-    padding: 40px 160px 55px 160px;
+    padding: 40px 160px 0 160px;
 
     &--success {
       padding-bottom: 41px;
@@ -141,16 +148,20 @@
     line-height: 40px;
   }
 
-  .modal {
+  .modal__wrapper {
     left: 18%;
   }
 
   .modal__text {
-    padding: 22px 25px 113px 22px;
+    padding: 22px 25px 65px 22px;
 
     &--success {
       padding-bottom: 0;
     }
+  }
+
+  .modal__button-wrapper--failure {
+    background-color: $lightgrey;
   }
 
   .modal__button--success {

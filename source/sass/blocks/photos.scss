@@ -1,0 +1,167 @@
+.photos-link {
+  height: 137px;
+}
+
+.photos__pic {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos__caption {
+  background-color: $lightgrey;
+  padding: 20px 11px 18px 17px;
+  text-align: left;
+}
+
+.photos__caption-name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__caption-time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photos__caption-text {
+  margin: 0;
+  padding-bottom: 9px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__caption-likes {
+  margin-top: auto;
+  position: relative;
+  padding-left: 30px;
+  color: $pink;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/heart.svg");
+  }
+}
+
+.photos__panorama-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "ПАНОРАМА ДНЯ";
+    top: -137px;
+    right: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: $pink;
+    width: 140px;
+    height: 36px;
+    color: $white;
+    text-align: center;
+    padding-top: 6px;
+  }
+}
+
+.photos_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .photos-link {
+    height: 509px;
+  }
+
+  .photos__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .photos__panorama-wrapper::before {
+    top: -452px;
+  }
+
+  .photos__caption {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 9px;
+    padding-left: 30px;
+  }
+
+  .photos__caption-likes {
+    margin-left: auto;
+    padding-right: 48px;
+    grid-row: 1;
+    grid-column: 2/-1;
+
+    &::before {
+      left: 135px;
+      top: 5px;
+    }
+  }
+
+  .photos__caption-text {
+    padding-bottom: 15px;
+    grid-column: 1/-1;
+  }
+
+  .photos__caption-name {
+    padding: 0;
+  }
+
+  .photos__author {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__link {
+    height: 506px;
+  }
+
+  .photos__caption {
+    padding-top: 25px;
+    padding-left: 27px;
+  }
+
+  .photos__caption-likes {
+    &::before {
+      top: 5px;
+      left: 104px;
+    }
+  }
+
+  .photos__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 54px;
+  }
+
+  .photos__panorama-wrapper::before {
+    right: 130px;
+  }
+
+  .photos__caption-text {
+    padding-bottom: 13px;
+  }
+}

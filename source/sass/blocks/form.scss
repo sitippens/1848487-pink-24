@@ -205,6 +205,10 @@
   }
 }
 
+.form__input-radio:focus-visible + .form__mark {
+  border: 2px solid $darkgrey-1;
+}
+
 .form__mark-checkbox {
   position: absolute;
   top: -2px;
@@ -486,9 +490,9 @@
     justify-content: space-between;
   }
 
-  .form__list:not(:last-child) {
-    margin-right: 55px;
-  }
+  // .form__list:not(:last-child) {
+  //   margin-right: 55px;
+  // }
 
   .form__legend {
     &:last-child {
@@ -524,6 +528,10 @@
   .form__mark {
     top: 18px;
     left: 35px;
+  }
+
+  .form__list {
+    max-width: 260px;
   }
 
   .form__mark-checkbox {
