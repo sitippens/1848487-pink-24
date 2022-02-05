@@ -83,6 +83,7 @@
   .main-nav__list {
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: end;
     max-width: 620px;
     column-gap: 79px;
     row-gap: 20px;
